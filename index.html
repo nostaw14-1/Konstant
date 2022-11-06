@@ -1,0 +1,106 @@
+&zwnj;<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="pages/css-scripts/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kio0wis.css">
+	<title>Konstant.</title>
+	<script src="pages/css-scripts/script.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+</head>
+<body onLoad="changeSlides()">
+	<!-- Nav Bar -->
+	<div id="mySidenav" class="sidenav fairplex">  
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<a href="pages/aboutme.html">About Me</a>
+		<p style="font-size:30px;padding-left:30px;">Games:</p>
+		<a href="pages/SMO.html" style="padding-left:40px;">- Super Mario Odyssey</a>
+		<a href="pages/MK8.html" style="padding-left:40px;">- Mario Kart 8 Deluxe</a>
+		<a href="pages/EldenRing.html" style="padding-left:40px;">- Elden Ring</a>
+		<a href="pages/SMS.html" style="padding-left:40px;">- Super Mario Sunshine</a>
+		<a href="pages/Subnautica.html" style="padding-left:40px;">- Subnautica</a>
+		<a href="pages/HoganCastle.html" style="padding-left:40px;">- Hogan's Castle</a>
+		<p style="position:absolute;bottom:15px;padding-left:32px">IST Term 3 Assessment Website</p>
+	</div>
+	<!-- Titles and Menu button -->
+	<div>
+		<h1 class="fairplex title1">Konstant.</h1>
+		<div class="logo"><img src="media/logo.png" height="100%" alt=""></div>
+		<div class="menu"><img onClick="openNav()" src="media/menu.svg" height="100%" alt=""></div>
+	</div>
+	<!-- Slideshows -->
+	<div class="gridContainerSlideshow">
+<div class="slideshow-container">
+  <div class="mySlides fade animateright" style="display:block;" id="slide">
+    <div class="numbertext">1 / 3</div>
+	 <a href="pages/Subnautica.html"><img src="media/Newsslide1.png" style="width:100%;height:65vh;border-radius:10px;" alt=></a>
+  </div>
+  <div class="mySlides fade animateright" id="slide2">
+    <div class="numbertext">2 / 3</div>
+    <img src="media/NewsSlide2.png" style="width:100%;height:65vh;border-radius:10px;" alt=>
+  </div>
+  <div class="mySlides fade animateright" id="slide3">
+    <div class="numbertext">3 / 3</div>
+    <a href="pages/HoganCastle.html"><img src="media/NewsSlide3.png" style="width:100%;height:65vh;border-radius:10px;" alt=></a>
+	</div>
+	<a class="prev" onclick="plusSlides(-1);animateLeft();animateLeft2();animateLeft3();">&#10094;</a>
+    <a class="next" onclick="plusSlides(1);animateRight();animateRight2();animateRight3();">&#10095;</a>
+	</div>
+	<br>
+		</div>
+	<!-- Shop Pages -->
+	<div class="gridContainer">	
+			<a href="pages/SMO.html">
+		<div class="ImageBackground1">
+			<div class="smo"></div>
+			<p class="fairplex imgText">Super Mario Odyssey</p>
+			<p class="fairplex imgText">$64.99 AUD</p>
+		</div>
+	</a>
+	<a href="pages/MK8.html">
+		<div class="ImageBackground2">
+			<div class="mk8"></div>
+			<p class="fairplex imgText">Mario Kart 8 Deluxe</p>
+			<p class="fairplex imgText">$59.99 AUD</p>
+		</div>
+	</a>
+		<a href="pages/SMS.html">
+	<div class="ImageBackground3">
+		<div class="sms"></div>
+		<p class="fairplex imgText">Super Mario Sunshine</p>
+		<p class="fairplex imgText">$1,600 ROBUX</p>
+	</div>
+	</a>
+	<a href="pages/EldenRing.html">
+	<div class="ImageBackground4">
+		<div class="eldenRing"></div>
+		<p class="fairplex imgText">Elden Ring</p>
+		<p class="fairplex imgText">$79.99 AUD</p>
+	</div>
+	</a>
+	
+	<a href="pages/Subnautica.html">
+	<div class="ImageBackground5">
+		<div class="subnautica"></div>
+		<p class="fairplex imgText">Subnautica</p>
+		<p class="fairplex imgText">$21.99 AUD</p>
+	</div>
+	</a>
+	<a href="pages/HoganCastle.html">
+	<div class="ImageBackground6">
+		<div class="HoganCastle" id="hogancastle"></div>
+		<p class="fairplex imgText">Hogan's Castle</p>
+		<p class="fairplex imgText">50 Dollars</p>
+	</div>
+	</a>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<p class="fairplex" style="padding-left:5vh;font-size:2vh;">Copyright© George Mihalarias</p>
+		<p class="fairplex" style="padding-right:5vh;font-size:2vh;position:absolute;right:0;">IST Term 3 Assessment Website</p>
+	</div>
+</body>
+</html>
