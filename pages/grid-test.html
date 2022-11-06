@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Games: Elden Ring</title>
+<link rel="stylesheet" href="css-scripts/styletest.css">
+<link rel="icon" type="image/x-icon" href="../media/favicon.ico">
+<script src="css-scripts/fitty.min.js"></script>
+<script src="css-scripts/page2script.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/kio0wis.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav fairplex">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
+		<a href="pages/AboutMe.html">About Me</a>
+		<a style="font-size:30px">Games:</a>
+		<a href="SMO.html" style="padding-left:60px;">- Super Mario Odyssey</a>
+		<a href="MK8.html" style="padding-left:60px;">- Mario Kart 8 Deluxe</a>
+		<a href="EldenRing.html" style="padding-left:60px;">- Elden Ring</a>
+		<a href="SMS.html" style="padding-left:60px;">- Super Mario Sunshine</a>
+		<a href="Subnautica.html" style="padding-left:60px;">- Subnautica</a>
+		<a href="HoganCastle.html" style="padding-left:60px;">- Hogan's Castle</a>
+		<p style="position:absolute;bottom:85px;padding-left:32px">IST Term 3 Assessment Website</p>
+	</div>
+	<div>
+		<a href="../index.html"><h1 class="fairplex title1" style="font-size:6vh">Konstant.</h1></a>
+		<div class="logo"><img src="../media/logo.png" height="100%" alt=""></div>
+		<div class="menu"><img onClick="openNav()" src="../media/menu.svg" height="100%" alt=""></div>
+	</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="modalimage" src="../media/EldenRing/EldenRing2.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="modalimage" src="../media/EldenRing/EldenRing1.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img class="modalimage" src="../media/EldenRing/EldenRing4.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="modalimage" src="../media/EldenRing/EldenRing3.png" style="width:100%;" alt="">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="../media/EldenRing/EldenRing2.png" onclick="currentSlide(1)" alt="Lost River" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/EldenRing/EldenRing1.png" onclick="currentSlide(2)" alt="Blood Kelp Caves" width="100%">
+	  </div>
+    <div class="column">
+      <img class="demo" src="../media/EldenRing/EldenRing4.png" onclick="currentSlide(3)" alt="Grand Reef" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/EldenRing/EldenRing3.png" onclick="currentSlide(4)" alt="Aurora" width="100%">
+    </div>
+  </div>
+</div>
+<div class="gridContainerWebContent">
+	<div class="gameTitle"></div>
+	<div class="description"></div>
+	<div class="price"></div>
+	<div class="buy"></div>
+	<div class="modallink"><img src="../media/EldenRing/EldenRingBoxArtShopPage.png" onclick="openModal();currentSlide(1)" alt="" id="image" class="imageNonDiv"></div>
+	<div class="imagehover1"></div>
+	<div class="imagehover2"></div>
+	<div class="imagehover3"></div>
+	<div class="imagehover4"></div>
+	</div>
+	
+	
+	<div class="footer">
+		<p class="fairplex" style="padding-left:5vh;font-size:2vh;">Copyright© George Mihalarias</p>
+		<p class="fairplex" style="padding-right:5vh;font-size:2vh;position:absolute;right:0;">IST Term 3 Assessment Website</p>
+	</div>
+</body>
+</html>

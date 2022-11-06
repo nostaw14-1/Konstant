@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+/* 
+Background Color: #837886
+Secondary Color: #BAA5C0 
+Tertiary Color: #988A9C
+Text Color: #F8F5D2 
+*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';
+	background-color: #837886;
+}
+h1 {
+	font-size: 50px;
+}
+.fairplex {
+	font-family: fairplex-wide, serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #F8F5D2;
+	clear: right;
+}
+.menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 6vh;
+	margin-top: 4.7vh;
+	height: 4vh;
+	transition: all 0.3s;
+}
+.menu:hover {
+	transform: scale(1.05);
+	background-color:#BAA5C0;
+	cursor: pointer;
+}
+.title1 {
+	position: absolute;
+	top: -0.8vh;
+	padding-left: 18vh;
+	font-size: 6vh;
+}
+.footer {
+	border-style: solid none none none;
+	border-color: #988A9C;
+	border-width: 0.7vh;
+	background-color: #BAA5C0;
+	position: relative;
+	bottom: 0;
+	float: left;
+	height: 8.5vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+}
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #988A9C;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+	overflow:hidden;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #F8F5D2;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 3vh;
+  right: 6vh;
+  font-size: 50px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+* {box-sizing:border-box}
+.slideshow-container {
+	display: block;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	width: 100%;
+}
+.mySlides {
+  display: none;
+}
+
+.capText {
+  color: #f2f2f2;
+  font-size: 1.75vh;
+	padding-right:6vh;
+  position: absolute;
+  bottom: 1.5vh;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1.5vh;
+	margin: 1vh;
+  padding: 0.5vh 1vh;
+  position: absolute;
+  top: 0;
+	background-color: #837886;
+	border-radius: 20px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.ImageBackground1 {
+	width: 100%;
+	transition: transform 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+
+
+.ImageBackground2 {
+	width:100%;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.imgText {
+	padding-left:3vh;
+	font-size: 2.4vh;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hover-shadow {
+  transition: 0.3s;
+}
+
+
+.menu img{
+	padding: 3px 3px 3px 3px;
+	transition: background-color 0.2s;
+	-webkit-transition: background-color 0.2s;
+}
+
+.logo {
+	position:absolute;
+	top:2.7vh;
+	left:6vh;
+	height:7.5vh;
+}
+
+.HoganCastle {
+	background-image: url("../../media/HoganCastle/HoganCastleLogo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.HoganCastle:hover {
+	background-image: url("../../media/HoganCastle/HoganCastleBoxArt.png");
+}
+
+.subnautica {
+	background-image: url("../../media/Subnautica/SubnauticaLogo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.subnautica:hover {
+	background-image: url("../../media/Subnautica/SubnauticaBoxArt.png");
+}
+
+.sms {
+	background-image: url("../../media/SMS/SMSLogo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.sms:hover {
+	background-image: url("../../media/SMS/SMSBoxArt.png");
+}
+
+.eldenRing {
+	background-image: url("../../media/EldenRing/EldenRingLogo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.eldenRing:hover {
+	background-image: url("../../media/EldenRing/EldenRingBoxArt.png");
+}
+
+.mk8 {
+	background-image: url("../../media/MK8/MK8Logo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.mk8:hover {
+	background-image: url("../../media/MK8/MK8BoxArt.png");
+}
+
+.smo {
+	background-image: url("../../media/SMO/SMOLogo.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 75%;
+	transition: 0.3s ease;
+}
+
+.smo:hover {
+	background-image: url("../../media/SMO/SMOBoxArt.png");
+}
+
+.gridContainer {
+	display: grid;
+	padding-top: 15vh;
+	padding-left: 6vh;
+	padding-right: 6vh;
+	padding-bottom: 6vh;
+	width: 100%;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-rows: repeat(2, 52vh);
+	column-gap: 6vh;
+	row-gap: 6vh;
+}
+
+.ImageBackground3 {
+	width:100%;
+	transition: transform 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.ImageBackground4 {
+	width:100%;
+	transition: transform 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.ImageBackground5 {
+	width:100%;
+	transition: transform 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.ImageBackground6 {
+	width:100%;
+	transition: transform 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+	float: left;
+	background-color: #BAA5C0;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.ImageBackground1:hover, .ImageBackground2:hover, .ImageBackground3:hover, .ImageBackground4:hover, .ImageBackground5:hover, .ImageBackground6:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.05);
+}
+
+.gridContainerSlideshow {
+	display: grid;
+	min-width:97%;
+	grid-template-columns: 9.7fr;
+	grid-template-rows: 65vh;
+	position: relative;
+	top: 11vh;
+	padding-left: 6vh;
+	padding-right: 6vh;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 13px;
+margin: -50px 5px 0 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+	background-color:rgba(131,120,134,1);
+}
+
+/* Position the "next button" to the right */
+.next {
+	position:absolute;
+  right: 51px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(186,165,192,1);
+}
+
+.ImageBackground1, .ImageBackground2, .ImageBackground3, .ImageBackground4, .ImageBackground5, .ImageBackground6, .gridContainerSlideshow {
+	border-radius: 10px;
+}
+
+.animateleft {
+	position:relative;
+	animation:animateleft 0.4s
+}
+
+@keyframes animateleft {
+	from {
+		left: -300px;
+		opacity: 0
+	} 
+	to {
+		left: 0;
+		opacity: 1
+	}
+}
+
+.animateright {
+	position: relative;
+	animation: animateright 0.4s;
+	overflow: hidden;
+}
+
+@keyframes animateright {
+	from {
+		right: -300px;
+		opacity: 0
+	} 
+	to {
+		right: 0;
+		opacity:1
+	}
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Games: Hogan's Castle</title>
+<link rel="stylesheet" href="css-scripts/page2style.css">
+	<script src="css-scripts/fitty.min.js"></script>
+<script src="css-scripts/page2script.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/kio0wis.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav fairplex">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
+		<a href="pages/AboutMe.html">About Me</a>
+		<a style="font-size:30px">Games:</a>
+		<a href="SMO.html" style="padding-left:60px;">- Super Mario Odyssey</a>
+		<a href="MK8.html" style="padding-left:60px;">- Mario Kart 8 Deluxe</a>
+		<a href="EldenRing.html" style="padding-left:60px;">- Elden Ring</a>
+		<a href="SMS.html" style="padding-left:60px;">- Super Mario Sunshine</a>
+		<a href="Subnautica.html" style="padding-left:60px;">- Subnautica</a>
+		<a href="HoganCastle.html" style="padding-left:60px;">- Hogan's Castle</a>
+		<p style="position:absolute;bottom:85px;padding-left:32px">IST Term 3 Assessment Website</p>
+	</div>
+	<div>
+		<a href="../index.html"><h1 class="fairplex title1" style="font-size:6vh">Konstant.</h1></a>
+		<div class="logo"><img src="../media/logo.png" height="100%" alt=""></div>
+		<div class="menu"><img onClick="openNav()" src="../media/menu.svg" height="100%" alt=""></div>
+	</div>
+	<div class="imageSmall">
+    	<div class="image"><img src="../media/HoganCastle/HoganCastleBoxArtShopPage.png" onclick="openModal();currentSlide(1)" alt="" id="image" class="imageNonDiv"></div>
+		<div class="imageHoverLinksGridContainer">
+			<div class="imageHoverLinksItem1" onMouseOver="hover('../media/HoganCastle/HoganCastle1.png')" onMouseOut="unhover('../media/HoganCastle/HoganCastleBoxArtShopPage.png')">
+				<img src="../media/HoganCastle/HoganCastle1.png" height="90%" width="69.7%" style="margin: 0.5vh;" onClick="openModal();currentSlide(1)">
+			</div>
+			<div class="imageHoverLinksItem2" onMouseOver="hover('../media/HoganCastle/HoganCastle2.png')" onMouseOut="unhover('../media/HoganCastle/HoganCastleBoxArtShopPage.png')">
+				<img src="../media/HoganCastle/HoganCastle2.png" height="90%" width="69.7%" style="margin: 0.5vh;" onClick="openModal();currentSlide(2)">
+			</div>
+			<div class="imageHoverLinksItem3" onMouseOver="hover('../media/HoganCastle/HoganCastle3.png')" onMouseOut="unhover('../media/HoganCastle/HoganCastleBoxArtShopPage.png')">
+				<img src="../media/HoganCastle/HoganCastle3.png" height="90%" width="69.7%" style="margin: 0.5vh;" onClick="openModal();currentSlide(3)">
+			</div>
+			<div class="imageHoverLinksItem4" onMouseOver="hover('../media/HoganCastle/HoganCastle4.png')" onMouseOut="unhover('../media/HoganCastle/HoganCastleBoxArtShopPage.png')">
+				<img src="../media/HoganCastle/HoganCastle4.png" height="90%" width="69.7%" style="margin: 0.5vh;" onClick="openModal();currentSlide(4)">
+			</div>
+		</div>
+	</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides animateright" id="slide">
+      <div class="numbertext">1 / 4</div>
+      <img class="modalimage" src="../media/HoganCastle/HoganCastle1.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide2">
+      <div class="numbertext">2 / 4</div>
+      <img class="modalimage" src="../media/HoganCastle/HoganCastle2.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide3">
+      <div class="numbertext">3 / 4</div>
+      <img class="modalimage" src="../media/HoganCastle/HoganCastle3.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide4">
+      <div class="numbertext">4 / 4</div>
+      <img class="modalimage" src="../media/HoganCastle/HoganCastle4.png" style="width:100%;" alt="">
+    </div>
+	<div class="mySlides animateright" id="slide5">
+      <div class="numbertext">what the hank doin</div>
+      <img class="modalimage" src="../pages/css-scripts/gif.gif" style="width:100%;height:50vh" alt="">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1);animateLeft();animateLeft2();animateLeft3();animateLeft4();animateLeft5()">&#10094;</a>
+    <a class="next" onclick="plusSlides(1);animateRight();animateRight2();animateRight3();animateRight4();animateRight5()">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="../media/HoganCastle/HoganCastle1.png" onclick="currentSlide(1)" alt="Title Page!!1!" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/HoganCastle/HoganCastle2.png" onclick="currentSlide(2)" alt="Level 1 of (possibly) 3 levels" width="100%">
+	  </div>
+    <div class="column">
+      <img class="demo" src="../media/HoganCastle/HoganCastle3.png" onclick="currentSlide(3)" alt="Dracula!!!!" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/HoganCastle/HoganCastle4.png" onclick="currentSlide(4)" alt="door" width="100%">
+    </div>
+  </div>
+</div>
+	
+	<div class="gameTitle"><center><h1 class="fairplex" style="font-size:5vh;">Hogan's Castle</h1></center></div>
+	<div class="description">
+		<p style="padding-left:2vw;padding-right:2vw;padding-top:1vh;font-size:2.68vmin;" class="fairplexlight" id="description">Hogan's Castle is one of the games of all time, ranking in on the charts at a position between the game higher than it and the game lower than it. The game offers mechanics and features which we may or may not have not seen emulated by other AAA studios. One of the most existent features of the game, which garnered it an instant reputation of people knowing about it, is the ability to play as dracula. Most games on the current market promise an offer of over 1.5 levels, but dracula was all like “No, let me double that” (1.5 x 2 = 3). Explore over 3 levels in a quest to find and defeat Hogan in his castle, ‘Hogan’s Castle’. Coming soon is the prequel ‘Hogan’s Alley’, and strong hints are being made that we may see over 4 levels in this game with the release of unreal engine 5. Buy this game or else people will laugh at you. </p>
+	</div>
+	<div class="price">
+		<h2 class="fairplex" style="padding-left:3vh;font-size:4vh">50 Dollars</h2>
+	</div>
+	<a href="./index.html">
+		<a href="https://beegyoshi.fandom.com/wiki/Hogan%27s_Castle">
+	<div class="buy">
+		<h1 class="fairplex" style="font-size:3vh;margin-left:3vh">Add to cart</h1>
+		<img src="../media/download.svg" style="position:absolute;right:3vh;top:23%;height:55%" alt=>
+	</div>
+		</a>
+	</a>
+	<div class="footer">
+		<p class="fairplex" style="padding-left:5vh;font-size:2vh;">Copyright© George Mihalarias</p>
+		<p class="fairplex" style="padding-right:5vh;font-size:2vh;position:absolute;right:0;">(Credits for paragraph goes to Nichloas T.) &zwnj;&zwnj;IST Term 3 Assessment Website</p>
+	</div>
+</body>
+</html>

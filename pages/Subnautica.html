@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Games: Subnautica</title>
+<link rel="stylesheet" href="css-scripts/page2style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+	<script src="css-scripts/fitty.min.js"></script>
+	<script src="css-scripts/page2script.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/kio0wis.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav fairplex">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
+		<a href="pages/AboutMe.html">About Me</a>
+		<a style="font-size:30px">Games:</a>
+		<a href="SMO.html" style="padding-left:60px;">- Super Mario Odyssey</a>
+		<a href="MK8.html" style="padding-left:60px;">- Mario Kart 8 Deluxe</a>
+		<a href="EldenRing.html" style="padding-left:60px;">- Elden Ring</a>
+		<a href="SMS.html" style="padding-left:60px;">- Super Mario Sunshine</a>
+		<a href="Subnautica.html" style="padding-left:60px;">- Subnautica</a>
+		<a href="HoganCastle.html" style="padding-left:60px;">- Hogan's Castle</a>
+		<p style="position:absolute;bottom:85px;padding-left:32px">IST Term 3 Assessment Website</p>
+	</div>
+	<div>
+		<a href="../index.html"><h1 class="fairplex title1" style="font-size:6vh">Konstant.</h1></a>
+		<div class="logo"><img src="../media/logo.png" height="100%" alt=""></div>
+		<div class="menu"><img onClick="openNav()" src="../media/menu.svg" height="100%" alt=""></div>
+	</div>
+	<div class="imageSmall">
+    	<div class="image"><img src="../media/Subnautica/SubnauticaBoxArtShopPage.png" onclick="openModal();currentSlide(1)" alt="" id="image" class="imageNonDiv"></div>
+		<div class="imageHoverLinksGridContainer">
+			<div class="imageHoverLinksItem1" onMouseOver="hover('../media/Subnautica/Subnautica2.png')" onMouseOut="unhover('../media/Subnautica/SubnauticaBoxArtShopPage.png')">
+				<img src="../media/Subnautica/Subnautica2.png" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(1)" alt="">
+			</div>
+			<div class="imageHoverLinksItem2" onMouseOver="hover('../media/Subnautica/Subnautica1.png')" onMouseOut="unhover('../media/Subnautica/SubnauticaBoxArtShopPage.png')">
+				<img src="../media/Subnautica/Subnautica1.png" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(2)" alt="">
+			</div>
+			<div class="imageHoverLinksItem3" onMouseOver="hover('../media/Subnautica/Subnautica4.png')" onMouseOut="unhover('../media/Subnautica/SubnauticaBoxArtShopPage.png')">
+				<img src="../media/Subnautica/Subnautica4.png" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(3)" alt="">
+			</div>
+			<div class="imageHoverLinksItem4" onMouseOver="hover('../media/Subnautica/Subnautica3.png')" onMouseOut="unhover('../media/Subnautica/SubnauticaBoxArtShopPage.png')">
+				<img src="../media/Subnautica/Subnautica3.png" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(4)" alt="">
+			</div>
+		</div>
+	</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides animateright" id="slide">
+      <div class="numbertext">1 / 4</div>
+      <img class="modalimage" src="../media/Subnautica/Subnautica2.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide2">
+      <div class="numbertext">2 / 4</div>
+      <img class="modalimage" src="../media/Subnautica/Subnautica1.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide3">
+      <div class="numbertext">3 / 4</div>
+      <img class="modalimage" src="../media/Subnautica/Subnautica4.png" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide4">
+      <div class="numbertext">4 / 4</div>
+      <img class="modalimage" src="../media/Subnautica/Subnautica3.png" style="width:100%;" alt="">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1);animateLeft();animateLeft2();animateLeft3();animateLeft4();animateLeft5()">&#10094;</a>
+    <a class="next" onclick="plusSlides(1);animateRight();animateRight2();animateRight3();animateRight4();animateRight5()">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="../media/Subnautica/Subnautica2.png" onclick="currentSlide(1)" alt="Lost River" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/Subnautica/Subnautica1.png" onclick="currentSlide(2)" alt="Blood Kelp Caves" width="100%">
+	  </div>
+    <div class="column">
+      <img class="demo" src="../media/Subnautica/Subnautica4.png" onclick="currentSlide(3)" alt="Grand Reef" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/Subnautica/Subnautica3.png" onclick="currentSlide(4)" alt="Aurora" width="100%">
+    </div>
+  </div>
+</div>
+	
+	<div class="gameTitle"><center><h1 class="fairplex" style="font-size:5vh;">Subnautica</h1></center></div>
+	<div class="description">
+		<p style="padding-left:2vw;padding-right:2vw;padding-top:1vh;font-size:2.68vmin;" class="fairplexlight" id="description">Subnautica is an open-world survival action-adventure video game developed and published by Unknown Worlds Entertainment. Players are free to explore the ocean on the alien planet 4546B, after their spaceship, the Aurora, crashes on the planet's surface. The player must collect resources and face creatures to survive the alien planet. Subnautica was released in early access for Microsoft Windows in December 2014, macOS in June 2015, and for Xbox One in May 2016. It was released out of early access in January 2018 for Microsoft Windows and macOS, with versions for Xbox One and PlayStation 4 in December 2018. The Nintendo Switch, PlayStation 5, and Xbox Series X/S versions were released in May 2021. It scores a 10/10 on steam, an "Overwhelmingly Positive" on steam community reviews with over 180,000 reviews, and a 97% on Humble Bundle.</p>
+	</div>
+	<div class="price">
+		<h2 class="fairplex" style="padding-left:3vh;font-size:4vh">$269.99 AUD</h2>
+	</div>
+	<a href="./index.html">
+	<div class="buy">
+		<h1 class="fairplex" style="font-size:3vh;margin-left:3vh">Add to cart</h1>
+		<img src="../media/download.svg" style="position:absolute;right:3vh;top:23%;height:55%" alt=>
+	</div>
+	</a>
+	<div class="footer">
+		<p class="fairplex" style="padding-left:5vh;font-size:2vh;">Copyright© George Mihalarias</p>
+		<p class="fairplex" style="padding-right:5vh;font-size:2vh;position:absolute;right:0;">IST Term 3 Assessment Website</p>
+	</div>
+</body>
+</html>

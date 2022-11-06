@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Games: Subnautica</title>
+<link rel="stylesheet" href="css-scripts/page2style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+	<script src="css-scripts/fitty.min.js"></script>
+<script src="css-scripts/page2script.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/kio0wis.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav fairplex">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
+		<a href="pages/AboutMe.html">About Me</a>
+		<a style="font-size:30px">Games:</a>
+		<a href="SMO.html" style="padding-left:60px;">- Super Mario Odyssey</a>
+		<a href="MK8.html" style="padding-left:60px;">- Mario Kart 8 Deluxe</a>
+		<a href="EldenRing.html" style="padding-left:60px;">- Elden Ring</a>
+		<a href="SMS.html" style="padding-left:60px;">- Super Mario Sunshine</a>
+		<a href="Subnautica.html" style="padding-left:60px;">- Subnautica</a>
+		<a href="HoganCastle.html" style="padding-left:60px;">- Hogan's Castle</a>
+		<p style="position:absolute;bottom:85px;padding-left:32px">IST Term 3 Assessment Website</p>
+	</div>
+	<div>
+		<a href="../index.html"><h1 class="fairplex title1" style="font-size:6vh">Konstant.</h1></a>
+		<div class="logo"><img src="../media/logo.png" height="100%" alt=""></div>
+		<div class="menu"><img onClick="openNav()" src="../media/menu.svg" height="100%" alt=""></div>
+	</div>
+	<div class="imageSmall">
+    	<div class="image"><img src="../media/MK8/MK8BoxArtShopPage.png" onclick="openModal();currentSlide(1)" alt="" id="image" class="imageNonDiv"></div>
+		<div class="imageHoverLinksGridContainer">
+			<div class="imageHoverLinksItem1" onMouseOver="hover('../media/MK8/MK81.jpg')" onMouseOut="unhover('../media/MK8/MK8BoxArtShopPage.png')">
+				<img src="../media/MK8/MK81.jpg" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(1)" >
+			</div>
+			<div class="imageHoverLinksItem2" onMouseOver="hover('../media/MK8/MK82.jpg')" onMouseOut="unhover('../media/MK8/MK8BoxArtShopPage.png')">
+				<img src="../media/MK8/MK82.jpg" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(2)">
+			</div>
+			<div class="imageHoverLinksItem3" onMouseOver="hover('../media/MK8/MK83.jpg')" onMouseOut="unhover('../media/MK8/MK8BoxArtShopPage.png')">
+				<img src="../media/MK8/MK83.jpg" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(3)">
+			</div>
+			<div class="imageHoverLinksItem4" onMouseOver="hover('../media/MK8/MK84.jpg')" onMouseOut="unhover('../media/MK8/MK8BoxArtShopPage.png')">
+				<img src="../media/MK8/MK84.jpg" width="90%" style="margin: 0.5vh;" onClick="openModal();currentSlide(4)">
+			</div>
+		</div>
+	</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides animateright" id="slide">
+      <div class="numbertext">1 / 4</div>
+      <img class="modalimage" src="../media/MK8/MK81.jpg" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide2">
+      <div class="numbertext">2 / 4</div>
+      <img class="modalimage" src="../media/MK8/MK82.jpg" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide3">
+      <div class="numbertext">3 / 4</div>
+      <img class="modalimage" src="../media/MK8/MK83.jpg" style="width:100%;" alt="">
+    </div>
+    <div class="mySlides animateright" id="slide4">
+      <div class="numbertext">4 / 4</div>
+      <img class="modalimage" src="../media/MK8/MK84.jpg" style="width:100%;" alt="">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1);animateLeft();animateLeft2();animateLeft3();animateLeft4();">&#10094;</a>
+    <a class="next" onclick="plusSlides(1);animateRight();animateRight2();animateRight3();animateRight4();">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="../media/MK8/MK81.jpg" onclick="currentSlide(1)" alt="Map: Electrodrome" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/MK8/MK82.jpg" onclick="currentSlide(2)" alt="Map: Hyrule Castle" width="100%">
+	  </div>
+    <div class="column">
+      <img class="demo" src="../media/MK8/MK83.jpg" onclick="currentSlide(3)" alt="Map: Neo Bowser City" width="100%">
+    </div>
+    <div class="column">
+      <img class="demo" src="../media/MK8/MK84.jpg" onclick="currentSlide(4)" alt="Map: 4-player Tick-Tock Clock" width="100%">
+    </div>
+  </div>
+</div>
+	
+	<div class="gameTitle"><center><h1 class="fairplex" style="font-size:5vh;">Mario Kart 8</h1></center></div>
+	<div class="description">
+		<p style="padding-left:2vw;padding-right:2vw;padding-top:1vh;font-size:2.6vmin;" class="fairplexlight" id="description">The kart racing game Mario Kart 8 was created and released by Nintendo in May 2014 for the Wii U. It keeps the gameplay elements from the Mario Kart series, where players drive karts while controlling characters from the Mario franchise and collecting various objects to hinder rivals or gain an advantage. In addition to introducing anti-gravity racing over walls and ceilings, Mario Kart 8 now allows players to collide with one another for a quick boost. Both single-player and multiplayer options are available, including online play over the Nintendo Network. In April 2017, Mario Kart 8 Deluxe, an improved version for the Nintendo Switch, was made available. It was also a hit, with reviewers praising the extension of the battle mode, and it ended up being the Switch game with the highest sales. Mario Kart 8 has sold a total of more than 55 million copies on Wii U and Switch, making it one of the best-selling video games of all time.</p>
+	</div>
+	<div class="price">
+		<h2 class="fairplex" style="padding-left:3vh;font-size:4vh">$299.99 AUD</h2>
+	</div>
+	<a href="./index.html">
+	<div class="buy">
+		<h1 class="fairplex" style="font-size:3vh;margin-left:3vh">Add to cart</h1>
+		<img src="../media/download.svg" style="position:absolute;right:3vh;top:23%;height:55%" alt=>
+	</div>
+	</a>
+	<div class="footer">
+		<p class="fairplex" style="padding-left:5vh;font-size:2vh;">Copyright© George Mihalarias</p>
+		<p class="fairplex" style="padding-right:5vh;font-size:2vh;position:absolute;right:0;">IST Term 3 Assessment Website</p>
+	</div>
+</body>
+</html>
